@@ -1,38 +1,65 @@
 .App {
-  text-align: center;
+  height: 100vh;
+  width: 100vw;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.body {
+  margin: 0px;
+  padding: 0px;
+}
+.sideBar {
+  height: 100%;
+  width: 50px;
+  background-color: lightseagreen;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.icon {
+  padding: 15px;
+  font-size: 20px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
+.icon:hover {
+  background-color: black;
+}
+
+.header {
+  margin-top: 0px;
+  margin-left: 0px;
+  margin-bottom: 0px;
+  height: 5%;
+  width: 100%;
+  padding: 10px;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+
+  background-color: lightseagreen;
+}
+
+.headerName {
+  align-items: center;
+  justify-content: center;
+  padding: 0px;
+  margin-top: 0px;
   color: white;
 }
+/*Cher okie naaa.Copy paste panitu git la push pannu ohhhhhhhhnoooooooo
 
-.App-link {
-  color: #61dafb;
-}
+First step uh.. NE change panna fies lam stage pananum..Adhuku use panra command uh
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
+
+git add . //Indha command ella files aium stage panirum. Stage na push panraku ready panradhunu vechukoyen
+
+
+Aduthu oru commit message kudukanum. Edhukuna, nee edhukaga indha code ah push panranu oru short ::-webkit-validation-bubble-message
+
+git commit -m "commit message here" // Ex: Header design added 
+
+
+Commit panadhuku aprm, push panna anga poirum...Adhuku final ah... Naa.. na sample panni kamikava ooo s na
+
+
+
+git push origin main // origin -<repo url  main->branch .headerName
+
+
+Knjm purincha:( knjm purunchu naPodhu naaa.Panna panna puryum.Ipodhaiku sopy paste panni, push panni viduokay na */
