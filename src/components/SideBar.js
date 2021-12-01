@@ -4,19 +4,27 @@ import Contact from "../Icons/Contact";
 import Profile from "../Icons/Profile";
 import Share from "../Icons/Share";
 import "../App.css";
-import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 
 function SideBar() {
   return (
     <div>
       <Router>
-        <Routes>
-          <Route exact path="/" element={<Home />} />
-          <Route path="/contact" element={<Contact />} />
-          <Route path="/profile" element={<Profile />} />
+        <Switch>
+          <Route path="/">
+            <Home />{" "}
+          </Route>
+          <Route path="/contact">
+            <Contact />{" "}
+          </Route>
+          <Route path="/profile">
+            <Profile />{" "}
+          </Route>
 
-          <Route path="/share" element={<Share />} />
-        </Routes>
+          <Route path="/share">
+            <Share />{" "}
+          </Route>
+        </Switch>
       </Router>
     </div>
   );
