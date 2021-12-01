@@ -1,38 +1,32 @@
 import React from "react";
-
+import Home from "../Icons/Home";
+import Contact from "../Icons/Contact";
+import Profile from "../Icons/Profile";
+import Share from "../Icons/Share";
 import "../App.css";
-import { AiFillHome } from "react-icons/ai";
-import { FaShareAlt } from "react-icons/fa";
-import { MdOutlineContactSupport } from "react-icons/md";
-import { CgProfile } from "react-icons/cg";
-
-import { IconContext } from "react-icons";
+import { BrowserRouter, Route, Switch } from "react-router-dom";
 
 function SideBar() {
   return (
-    <IconContext.Provider
-      value={{
-        color: "white",
-        padding: "10px",
-        margin: "10px",
-      }}
-    >
-      <div className="sideBar">
-        <div className="icon">
-          <AiFillHome />
-        </div>
-        <div className="icon">
-          <MdOutlineContactSupport />
-        </div>
-        <div className="icon">
-          <CgProfile />
-        </div>
+    <div className="">
+      <Route path="/home">
+        <Home />
+      </Route>
+      <BrowserRouter>
+        <Switch>
+          <Route path="/contact">
+            <Contact />
+          </Route>
+          <Route path="/profile">
+            <Profile />
+          </Route>
 
-        <div className="icon">
-          <FaShareAlt />
-        </div>
-      </div>
-    </IconContext.Provider>
+          <Route path="/share">
+            <Share />
+          </Route>
+        </Switch>
+      </BrowserRouter>
+    </div>
   );
 }
 export default SideBar;
