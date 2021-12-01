@@ -1,4 +1,6 @@
 import React from "react";
+import "../App.css";
+
 import { CgProfile } from "react-icons/cg";
 
 function Profile() {

@@ -1,4 +1,5 @@
 import React from "react";
+import "../App.css";
 import { AiFillHome } from "react-icons/ai";
 
 function Home() {
@@ -6,7 +7,7 @@ function Home() {
     <div>
       <div className="sideBar">
         <div className="icon">
-          <a href="/home">
+          <a href="/">
             <AiFillHome />
           </a>
         </div>
