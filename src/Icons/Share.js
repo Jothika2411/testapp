@@ -1,17 +1,8 @@
 import React from "react";
 import "../App.css";
 
-import { FaShareAlt } from "react-icons/fa";
-
 function Share() {
-  return (
-    <div className="sideBar">
-      <div className="icon">
-        <FaShareAlt />
-        <a href="/share">joe</a>
-      </div>
-    </div>
-  );
+  return <div>jjjjoe</div>;
 }
 
 export default Share;
