@@ -8,7 +8,8 @@
   padding: 0px;
 }
 .sideBar {
-  height: 100px;
+  margin-top: 10px;
+  height: 600px;
   width: 50px;
   background-color: lightseagreen;
 }
@@ -43,4 +44,11 @@
   padding: 0px;
   margin-top: 0px;
   color: white;
+}
+
+.Text {
+  margin: -600px;
+  margin-left: -130%;
+  text-align: center;
+  justify-content: center;
 }

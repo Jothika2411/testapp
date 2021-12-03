@@ -1,24 +1,22 @@
 import "./App.css";
-import Header from "./components/Header";
-import Home from "./Icons/Home";
-import Contact from "./Icons/Contact";
-import Profile from "./Icons/Profile";
-import Share from "./Icons/Share";
+import Dashboard from "./Icons/Dashboard";
+import AssignmentRules from "./Icons/AssignmentRules";
+import Tickets from "./Icons/Tickets";
+import Logout from "./Icons/Logout";
 import Sidebar from "./components/SideBar";
-import { Router, Switch, Route } from "react-router-dom";
+import { BrowserRouter, Switch, Route } from "react-router-dom";
 function App() {
   return (
     <div className="App">
-      <Header />
-      <Router>
+      <BrowserRouter>
         <Sidebar />
         <Switch>
-          <Route exact path="/" component={Home} />
-          <Route exact path="/contact" component={Contact} />
-          <Route exact path="/profile" component={Profile} />
-          <Route exact path="/share" component={Share} />
+          <Route exact path="/" component={Dashboard} />
+          <Route exact path="/contact" component={AssignmentRules} />
+          <Route exact path="/profile" component={Tickets} />
+          <Route exact path="/share" component={Logout} />
         </Switch>
-      </Router>
+      </BrowserRouter>
     </div>
   );
 }
