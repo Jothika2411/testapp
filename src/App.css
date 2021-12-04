@@ -11,18 +11,21 @@
   margin-top: 10px;
   height: 600px;
   width: 60px;
-  background-color: darkblue;
+  text-align: center;
+  background-color: #021029;
 }
 
 .icon {
-  padding: 15px;
-  font-size: -5px;
+  display: block;
+  font-size: 0px;
+  padding: 15px 0px;
   color: white;
   margin-bottom: 50px;
+  text-align: center;
 }
 
 .icon:hover {
-  background-color: black;
+  background-color: white;
 }
 
 .header {
@@ -51,4 +54,24 @@
   margin-left: -130%;
   text-align: center;
   justify-content: center;
+}
+
+.icon-active link {
+  color: white;
+}
+
+icon:hover link,
+.icon-active link {
+  color: #45b29d;
+}
+
+.icon:hover,
+.icon-active {
+  color: #c0c2c1;
+  cursor: pointer;
+}
+.icon link {
+  text-decoration: none;
+  color: #6b6a72;
+  font-size: 1.5rem;
 }

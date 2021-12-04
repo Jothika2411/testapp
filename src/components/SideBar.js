@@ -1,13 +1,14 @@
 import React from "react";
 import "../App.css";
-import { Link } from "react-router-dom";
+import { Link, useHistory } from "react-router-dom";
 import Dashboard from "../assets/Dashboard.svg";
 import AssignmentRules from "../assets/AssignmentRules.svg";
 import Tickets from "../assets/Tickets.svg";
 import Logout from "../assets/Logout.svg";
 
-const SideBar = ({ history }) => {
-  console.log(history);
+const SideBar = () => {
+  const history = useHistory();
+
   const getColor = (curr) => {
     if (history.location.pathname === curr) {
       return "#FFFFFF";
