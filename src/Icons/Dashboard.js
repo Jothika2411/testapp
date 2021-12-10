@@ -4,7 +4,10 @@ import "../App.css";
 function Dashboard() {
   return (
     <div>
-      <h2 className="Text">Home</h2>
+      <div className="dashboard"></div>
+      <div className="dashboardone">one</div>
+      <div className="dashboardtwo">two</div>
+      <div className="dashboardthree">three</div>
     </div>
   );
 }
