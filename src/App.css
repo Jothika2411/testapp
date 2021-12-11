@@ -101,24 +101,6 @@ icon:hover link,
   background-color: white;
 }
 
-/*
-.dashboardtwo {
-  position: absolute;
-  margin: 100px;
-  margin-top: -600px;
-
-  width: 330px;
-  height: 522px;
-  background-color: white;
+.active-link {
+  color: red;
 }
-
-.dashboardthree {
-  position: absolute;
-  margin: 100px;
-  margin-top: -600px;
-
-  width: 113px;
-  height: 522px;
-  background-color: white;
-}
-*/
